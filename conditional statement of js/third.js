@@ -80,5 +80,36 @@ for(let i = 1; i <= 10; i++){
     console.log("i = ", i);
 }
 
+// continue statement
+for(let i = 1; i <= 10; i++){
+    if(i === 5){    
+        continue;
+    }
+    console.log("i = ", i);
+}
+
+// nested loops
+for(let i = 1; i <= 3; i++){
+    for(let j = 1; j <= 3; j++){
+        console.log("i = ", i, "j = ", j);
+    }
+}
+
+// for of loop
+let fruits = ["apple", "banana", "orange"];
+for(let fruit of fruits){
+    console.log(fruit);
+}
+
+// for in loop
+let person = {
+    name: "Avika",
+    age: 20,
+    city: "Pune"
+};  
+for(let key in person){
+    console.log(key, ":", person[key]);
+}
+
 
 
